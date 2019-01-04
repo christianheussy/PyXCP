@@ -1,6 +1,5 @@
 import sys
-from PyQt4 import QtCore, QtGui, uic
-import qdarkstyle
+from PyQt5 import QtCore, QtGui, uic
 from library import HelpGUI
 from library import XcpCom
 
@@ -53,7 +52,6 @@ class MyApp(QtGui.QMainWindow, Ui_MainWindow):
 
 if __name__ == '__main__':
     app = QtGui.QApplication(sys.argv)
-    # app.setStyleSheet(qdarkstyle.load_stylesheet_pyqt())
     window = MyApp()
     window.show()
     sys.exit(app.exec_())
